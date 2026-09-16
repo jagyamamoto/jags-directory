@@ -71,28 +71,14 @@ Finder sometimes keeps the copied file's old modified date. If you want the crea
 
 This runs `touch -m`, so it changes only the modified date.
 
-## Prompt for Codex or Another AI
+## Copy-Paste Prompts for Codex and Claude Code
 
-Copy this prompt into Codex, Claude Code, or another local coding agent to install it for you:
+For beginner-friendly prompts, see [PROMPTS.md](PROMPTS.md).
+
+Short version:
 
 ```text
-Please install Jag's directory on this Mac.
-
-Goal:
-- Add Finder right-click actions that copy a selected file or folder as a file:// link.
-- Add a text service that opens a selected file:// link or local path in Finder.
-- Do not move the mouse or take over the visible desktop.
-
-Steps:
-1. Check that Git is installed.
-2. Clone https://github.com/jagyamamoto/jags-directory.git into a normal local projects folder, not Dropbox/iCloud/Google Drive/OneDrive.
-3. Run chmod +x install.sh scripts/*.sh.
-4. Run ./install.sh.
-5. Verify that ~/Library/Services contains:
-   - Jag's directory: Copy file link.workflow
-   - Jag's directory: Open file link in Finder.workflow
-   - Jag's directory: Set modified date to now.workflow
-6. Tell me how to use the Finder menu items.
+Install Jag's directory from https://github.com/jagyamamoto/jags-directory.git on this Mac. Use CLI/file operations only, clone it into ~/Projects/jags-directory, run chmod +x install.sh scripts/*.sh, run ./install.sh, verify the three ~/Library/Services workflows were created, and explain the Finder right-click usage in simple Japanese.
 ```
 
 ## Uninstall
